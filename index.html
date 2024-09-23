@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--
+    Hyperspace by Pixelarity
+    pixelarity.com @pixelarity
+    License: pixelarity.com/license
+-->
+<html lang="en-us">
+<head>
+    <title>Chronic Absenteeism in the Nation's Schools</title>
+    <!-- Start EDWeb Metadata - Do Not Modify Tags in Block Below -->
+    <!-- End EDWeb Metadata - Do Not Modify Tags in Block Above -->
+
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Social media sharing properties -->
+    <!-- OG tags cannot use relative URLs -->
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="Chronic Absenteeism in the Nation's Schools" />
+    <meta property="og:url" content="https://www2.ed.gov/datastory/chronicabsenteeism.html" />
+    <meta property="og:description" content="Students who are chronically absent—meaning they miss at least 15 days of school in a year—are at serious risk of falling behind in school. Yet, for too long, this crisis in our nation’s public elementary and secondary schools has not been fully understood. Now, under the Every Student Succeeds Act, many states are reporting chronic absenteeism data annually. This data story, updated with the 2015–16 Civil Rights Data Collection (CRDC), bolsters efforts to reduce and ultimately eliminate chronic absenteeism so that all students have a better chance of reaching their full potential. The data from the CRCD is drawn from nearly every public school in the country and helps us understand who is chronically absent, at what grade levels chronic absenteeism tends to occur, and how chronic absenteeism compares community-by-community and state-by-state." />
+    <meta property="og:image" content="https://www2.ed.gov/datastory/assets/css/images/boywbackpack.jpg" />
+
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="assets/css/map.css" /> -->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--<link rel="stylesheet" href="widgets.css" />-->
+    <!-- <link rel="stylesheet" href="assets/css/chart-styles.css" /> -->
+    <!-- browser tab icon (aka favicon) -->
+    <link rel="icon" href="images/doelogo_rev.png" />
+
+    <!-- Scripts -->
+    <!--<script src="widgets.js"></script>-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <!-- Substitutes high-res images for Retina displays (html file only) -->
+    <script type="text/javascript" src="assets/js/retina.js"></script>
+
+    <script src="assets/js/d3.v3.min.js"></script>
+    <script src="assets/js/d3-tip.js"></script>
+    <script src="assets/js/queue.v1.min.js"></script>
+    <script src="assets/js/topojson.v1.min.js"></script>
+
+
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+
+            <div class="nav-image">
+                <img src="images/edsealbw.svg" alt="Department of Education" />
+            </div>
+
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#one">Who is Impacted</a></li>
+                        <li><a href="#two">Unstable Pathways</a></li>
+                        <li><a href="#three">Chronic Absence Mapped</a></li>
+                        <li><a href="#four">Why It Matters</a></li>
+                    </ul>
+                </nav>
+                <ul class="icons socialmedia" style="margin-bottom: 0;">
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html&text=Over%207%20million%20students%20missed%2015%20days%20or%20more%20in%20the%202015-16%20school%20year."
+                           target="_blank" title="Tweet" class="fa-twitter"><span class="label">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html"
+                           target="_blank" title="Share on Facebook" class="fa-facebook"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html&title=Over%207%20million%20students%20missed%2015%20days%20or%20more%20in%20the%202015-16%20school%20year."
+                           target="_blank" title="Share on LinkedIn" class="fa-linkedin"><span class="label">LinkedIn</span></a>
+                    </li>
+                    <li><a href="mailto:?subject=Chronic%20Absenteeism%20in%20the%20Nation's%20Schools&body=Over%207%20million%20students%20missed%2015%20days%20or%20more%20in%20the%202015-16%20school%20year.%0A%0Ahttps%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html" target=" _blank" title="Email" class="fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Given Flex, this allows the social media icons to be paired with the navigation links without hugging the bottom -->
+            <div>
+                &nbsp;
+            </div>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro 1 -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1 style="max-width: 650px;">CHRONIC ABSENTEEISM IN THE NATION'S SCHOOLS<br></h1>
+                <p style="font-size:15pt">A hidden educational crisis.</p>
+                <ul class="actions">
+                    <li><span class="buttonInactive">&mdash; U.S. Department of Education</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- InformED Shouout -->
+
+        <section class="wrapper style5">
+            <div class="inner align-center" style="padding-top: 40px; padding-bottom: 20px;">
+                <div>
+                    <i class="fa fa-bolt fa-lg" style="margin-bottom: 1em; color: rgba(255,255,255,1);"></i>
+                </div>
+                <p>Powered by InformED and the <a href="/about/offices/list/ocr/docs/crdc-2015-16.html">2015-16 Civil Rights Data Collection.</a></p>
+            </div>
+        </section>
+
+        <!-- Intro 2 -->
+        <section class="wrapper style3">
+            <div class="inner">
+                <div class="align-right">
+                    <div style="margin-bottom: 2.5em;">
+                        <input type="checkbox" id="highContrast" name="highContrast">
+                        <label for="highContrast">Enable High Contrast (508)</label>
+                    </div>
+                </div>
+                <h2 class="line">Data Illuminates the Extent of Chronic Absenteeism</h2>
+                <p class="afterHeader">
+                    Education can only fulfill its promise as the great equalizer&mdash;a force that can overcome differences in privilege and background&mdash;when we work to ensure that students are in school every day and receive the supports they need to learn and thrive.
+                </p>
+                <p>
+                    At the same time, we know that many students experience tremendous adversity in their lives&mdash;including poverty, health challenges, community violence, and difficult family circumstances&mdash;that make it difficult for them to take advantage of the opportunity to learn at school.
+                </p>
+                <p style="margin-bottom:3.5em;">
+                    Students who are chronically absent&mdash;meaning they miss at least 15 days of school in a year&mdash;are at serious risk of falling behind in school. Yet, for too long, this crisis in our nation's public elementary and secondary schools has not been fully understood. Now, under the Every Student Succeeds Act, many states are reporting chronic absenteeism data annually. This data story, updated with the <a href="/about/offices/list/ocr/docs/crdc-2015-16.html" target="_blank">2015&ndash;16 Civil Rights Data Collection (CRDC)</a>, bolsters efforts to reduce and ultimately eliminate chronic absenteeism so that all students have a better chance of reaching their full potential. The data from the CRCD is drawn from nearly every public school in the country and helps us understand who is chronically absent, at what grade levels chronic absenteeism tends to occur, and how chronic absenteeism compares community-by-community and state-by-state.
+                </p>
+                <div class="disclaimer">
+                    <div style="display: table-row; width: 100%;">
+                        <div style="display: table-cell; vertical-align: middle; width: 10%;">
+                            <div class="icon"><span class="left icon fa-bar-chart-o"></span></div>
+                        </div>
+                        <div class="right">
+                            Note: Data included in this story may differ slightly from other published reports due to certain data decisions. This data story has been updated to incorporate the 2015&ndash;16 Civil Rights Data Collection (CRDC).
+                        </div>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <div style="display: table-row; width: 100%;">
+                        <div style="display: table-cell; vertical-align: middle; width: 10%;">
+                            <div class="icon"><span class="left icon fa-mouse-pointer"></span></div>
+                        </div>
+                        <div class="right">
+                            Our charts are interactive! Hover over or click on chart elements to learn more about specific data points and, where they appear, use buttons to filter charts by select groups.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- One -->
+        <section id="one" class="wrapper image1">
+            <div class="inner">
+                <div class="row">
+                    <div class="6u 12u$(medium)">
+                        <!-- FYI: no alt text necessary on chair because extraneous image, meaning-wise -->
+                        <img src="images/chairMask.svg" class="chair" alt="">
+                    </div>
+                    <div id="counter" class="6u$ 12u$(medium)">
+                        <h2>
+                            OVER 7 MILLION
+                            <span style="line-height: 1.75em;">
+                                students missed 15 or more days of school in 2015-16.
+                            </span>
+                        </h2>
+                        <p style="margin-top:1.5em; line-height: 1.75em;">
+                            That's 16 percent of the student population&mdash;<b>or about 1 in 6 students.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="one_chart" class="wrapper chart">
+            <div id="one_sections" class="inner">
+                <div class="align-center">
+                    <img class="barChart-icon" src="images/barIcon_chartArea.svg" alt="Bar Chart Icon" />
+                </div>
+                <div class="chart"></div>
+                <p style="margin-top:1.5em; margin-bottom:3.5em;">
+                    Let's take a closer look at which groups of students were more likely to be chronically absent. Disparities in chronic absenteeism by key demographic characteristics are evident, though unacceptable levels of chronic absenteeism exist for all students.
+                </p>
+                <div id="ch1_2"></div>
+                <p style="margin-top:1.5em;">
+                    The disparities are striking. Consider the relative differences: compared to their white peers, American Indian and Pacific Islander students are over 50 percent more likely to lose three weeks of school or more, black students 40 percent more likely, and Hispanic students 17 percent more likely.
+                </p>
+                <p style="margin-bottom: 3.5em;">
+                    See chronic absenteeism rates for other student groups in the next chart.
+                </p>
+                <p class="align-center" style="margin-top:3.5em;">
+                    View Chart By:
+                </p>
+                <div id="ch1_3"></div>
+                <p style="margin-top:1.5em;">
+                    One notable trend: English learners, who face significant barriers in school and society, are approximately 1.2 times less likely to be chronically absent than their non-English learner peers. Fourteen percent of English learners are chronically absent compared to 16 percent of non-English learners.
+                </p>
+                <p>
+                    The same is not true for students with disabilities who are 1.5 times more likely to be chronically absent than students without disabilities. The Individuals with Disabilities Education Act (IDEA) is intended to ensure all students with disabilities have access to a free, appropriate education yet chronic absenteeism is a barrier that gets in the way of achieving that goal.
+                </p>
+                <p>
+                    At roughly 16 percent each, male and female students are similarly likely to be chronically absent.
+                </p>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="wrapper style1">
+            <div class="inner">
+                <h2 class="line">Lost Along the Way</h2>
+                <p>
+                    Chronic absenteeism occurs at every grade level but is more prevalent in some grades than others. Chronic absenteeism rates are highest in high school, according to data in the 2015-16 Civil Rights Data Collection. Other research suggests that students in the early elementary grades <a href="http://www.nccp.org/publications/pdf/text_771.pdf" target="_blank">also experience high rates of chronic absenteeism</a>, which may be masked in analyses that are only available at the school level (as is the case here). Understanding when students are most at risk will help schools and advocates better target interventions to improve student outcomes.
+                </p>
+            </div>
+        </section>
+
+        <section id="two_chart" class="wrapper chart">
+            <div id="two_sections" class="inner">
+                <div class="align-center">
+                    <img class="barChart-icon" src="images/barIcon_chartArea.svg" alt="Bar Chart Icon" />
+                </div>
+                <div style="margin-bottom: 1.5em" class="chart"></div>
+                <div id="ch2_1">
+                </div>
+                <p style="margin-top: 1.5em;">
+                    Overall, more than 20 percent of students in high school are chronically absent compared with more than 14 percent of students in middle school. The chronic absenteeism rate was the lowest for elementary school students, at almost 14 percent. For more information on how we defined grade levels, <a href="#datanotes">see the data notes</a>.
+                </p>
+                <p style="margin-bottom: 3.5em;">
+                    Next, we looked at how chronic absenteeism varied across grade levels for specific groups of students.
+                </p>
+                <p class="align-center" style="margin-top:3.5em;">
+                    View Chart By:
+                </p>
+                <div id="ch2_2"></div>
+                <p style="margin-top:1.5em;">
+                    For each subgroup of students there is a similar pattern: the likelihood of chronic absenteeism increases as students progress into high school. Notably, the stronger overall attendance observed among English learners dissipates over grade levels, such that they experience higher chronic absenteeism than their non-English learner peers when they reach high school.
+                </p>
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section id="three" class="wrapper style3">
+            <div class="inner">
+                <h2 class="line">The Geography of Chronic Absenteeism</h2>
+                <p>
+                    Students experience chronic absenteeism from coast to coast. Disturbingly, approximately 800 school districts reported that more than 30 percent of their students missed at least three weeks of school in 2015-16.
+                </p>
+                <div class="disclaimer">
+                    <div style="display: table-row; width: 100%;">
+                        <div style="display: table-cell; vertical-align: middle; width: 10%;">
+                            <div class="icon"><span class="legendPointer icon fa-mouse-pointer"></span></div>
+                        </div>
+                        <div class="legendExplain">
+                            Hover over school districts for information, double-click to zoom in, and select a range from the legend to see specific views of the data. Select the buttons below the map to toggle between percentages for elementary and unified school districts, and independent elementary, secondary, and unified districts.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Map -->
+        <!-- Map -->
+        <section class="wrapper chart">
+            <div class="inner">
+                <!-- Spinner loader (see loader.css) -->
+                <div id="mapWrapper">
+                    <!-- MAP #1 (left toggle) -->
+                    <div class="legend" id="percentLegend" style="display: none;">
+                        <h3 class="title">% of students who were chronically absent in <span class="nowrap">(2015–16)</span></h3>
+                        <div class="legendContainer">
+                            <div class="legendButtonWrapper">
+                                <div class="legendButton" data-value="#bbc7df">
+                                    <div class="legendButtonColor" style="background-color: #bbc7df;">
+                                        <hr class="verticalLine" />
+                                    </div>
+                                    <div class="legendText">
+                                        0%
+                                    </div>
+                                </div>
+                                <div class="legendButton" data-value="#9c9ac9">
+                                    <div class="legendButtonColor" style="background-color: #9c9ac9;">
+                                        <hr class="verticalLine" />
+                                    </div>
+                                    <div class="legendText">
+                                        &gt;0% to 5%
+                                    </div>
+                                </div>
+                                <div class="legendButton" data-value="#7f7dbc">
+                                    <div class="legendButtonColor" style="background-color: #7f7dbc;">
+                                        <hr class="verticalLine" />
+                                    </div>
+                                    <div class="legendText">
+                                        &gt;5% to 15%
+                                    </div>
+                                </div>
+                                <div class="legendButton" data-value="#6954a1">
+                                    <div class="legendButtonColor" style="background-color: #6954a1;">
+                                        <hr class="verticalLine" />
+                                    </div>
+                                    <div class="legendText">
+                                        &gt;15% to 30%
+                                    </div>
+                                </div>
+                                <div class="legendButton" data-value="#491c85">
+                                    <div class="legendButtonColor" style="background-color: #491c85;">
+                                        <hr class="verticalLine" />
+                                    </div>
+                                    <div class="legendText">
+                                        &gt;30%
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
+                            </div>
+                        </div>
+
+                        <!-- end legendContainer -->
+                    </div>
+                    <!-- end legend 1 -->
+                    <div id="map">
+                        <div class="mapControlsParent">
+                            <div class="mapControlsContainer">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end map -->
+                </div>
+                <!-- end mapWrapper -->
+                <div>
+                    <p class="dataLinksText" style="margin-bottom: 0em;">* <a href="#mapnotes">See map notes</a>. <!--<a href="#">Download the district level data</a> used in this map.--></p>
+                </div>
+            </div>
+            <!-- end inner -->
+        </section>
+
+
+        <!-- Four -->
+        <section id="four" class="wrapper style1">
+            <div class="inner">
+                <h2 class="line">Why Chronic Absenteeism Matters: What the Research Says</h2>
+                <p>
+                    Chronic absenteeism is widespread&mdash;about one out of every six students missed three weeks or more of school in 2015-16. That translates to more than 100 million school days lost. Research suggests the reasons for chronic absenteeism are as varied as the challenges our students and families face&mdash;including <a href="http://new.every1graduates.org/wp-content/uploads/2012/05/FINALChronicAbsenteeismReport_May16.pdf" target="_blank">poor health, limited transportation, and a lack of safety</a> &mdash; which can be particularly acute in disadvantaged communities and <a href="http://www.attendancecounts.org/wordpress/wp-content/uploads/2010/04/Ready-2010-2.pdf" target="_blank">areas of poverty</a>.
+                </p>
+                <p style="margin-bottom: 3.5em;">
+                    Whatever its causes, chronic absenteeism can be devastating:
+                </p>
+                <ul class="callout">
+                    <li>
+                        <h3 class="icon style1 fa-book">Chronic absenteeism may prevent children from reaching early learning milestones.</h3>
+                        <p>
+                            Children who are chronically absent in preschool, kindergarten, and first grade are <a href="https://ccsr.uchicago.edu/publications/preschool-attendance-chicago-public-schools-relationships-learning-outcomes-and-reasons" target="_blank">much less likely to read at grade level by the third grade</a>. Students who cannot read at grade level by the end of third grade are <a href="http://www.aecf.org/m/resourcedoc/AECF-DoubleJeopardy-2012-Full.pdf" target="_blank">four times more likely than proficient readers to drop out of high school</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="icon style2 fa-graduation-cap">Irregular attendance can be a better predictor of whether students will drop out before graduation than test scores.</h3>
+                        <p>
+                            <a href="https://www.schools.utah.gov/file/31291767-087c-4edb-8042-87f272507c1d" target="_blank">A study of public school students in Utah</a> found that an incidence of chronic absenteeism in even a single year between 8th and 12th grade was associated with a seven-fold increase in the likelihood of dropping out.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="icon style2 fa-gavel">Frequent absences from school can shape adulthood.</h3>
+                        <p>
+                            High school dropout, which chronically absent students are more likely to experience, has been linked to poor outcomes later in life, from poverty and <a href="https://www.nber.org/papers/w12352.pdf" target="_blank">diminished health</a> to <a href="http://www.justicepolicy.org/images/upload/07-08_rep_educationandpublicsafety_ps-ac.pdf" target="_blank">involvement in the criminal justice system</a>.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wrapper style3">
+            <div class="inner">
+                <div class="socialmedia">
+                    <ul class="align-right icons">
+                        <li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html&text=Over%207%20million%20students%20missed%2015%20days%20or%20more%20in%20the%202015-16%20school%20year." target="_blank" title="Tweet" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html" target="_blank" title="Share on Facebook" class="fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html&title=Over%207%20million%20students%20missed%2015%20days%20or%20more%20in%20the%202015-16%20school%20year." target="_blank" title="Share on LinkedIn" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="mailto:?subject=Chronic%20Absenteeism%20in%20the%20Nation's%20Schools&body=Over%207%20million%20students%20missed%2015%20days%20or%20more%20in%20the%202015-16%20school%20year.%0A%0Ahttps%3A%2F%2Fwww2.ed.gov%2Fdatastory%2Fchronicabsenteeism.html" target=" _blank" title="Email" class="fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </div>
+                <h2 class="line">The Path Forward: Every Student, Every Day</h2>
+                <p>
+                    The very students who tend to face significant challenges and need the most educational supports are often missing the most school.
+                </p>
+                <p>
+                    When our teachers, principals, policymakers, and others have access to robust data on the extent and nature of chronic absenteeism, we are all in a better position to provide students with the supports they need to stem this crisis in our schools.
+                </p>
+                <p>
+                    The 2015 federal education law the Every Student Succeeds Act (ESSA) empowered states to create unique statewide accountability systems. In addition to measurements of annual school performance, ESSA requires states to hold schools accountable for one measure of "school quality or student success (SQSS)" (ESSA 2015, 111-31) and <a href="https://www.future-ed.org/wp-content/uploads/2017/10/TABLE_Chronic_Absenteeism_v2.pdf" target="_blank">36 states, the District of Columbia, and Puerto Rico submitted plans to the U.S. Department of Education to use chronic absenteeism as one SQSS indicator</a>. ESSA state plans outline strategies to <a href="https://www.future-ed.org/tapping-federal-dollars-to-reduce-chronic-absenteeism" target="_blank">leverage federal funds to improve attendance through teacher training, improving health services, family engagement, and school climate, important levers for increasing school attendance</a>.
+                </p>
+                <p style="margin-bottom: 3.5em;">
+                    Through an array of resources, the Department of Education is committed to helping ensure all our students, especially the most disadvantaged, are in school every day, including:
+                </p>
+                <ul class="callout">
+                    <li>
+                        <h3 class="icon style1 fa-bus">
+                            <a href="/about/inits/ed/chronicabsenteeism/toolkit.pdf" target="_blank">Every Student, Every Day: A national initiative to address and eliminate chronic absenteeism.</a>
+                        </h3>
+                        <p>
+                            Supports coordinated community action that addresses the underlying causes of local chronic absenteeism affecting millions of children in our nation's public schools each year.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="icon style3 fa-table">
+                            <a href="/about/offices/list/ocr/docs/crdc-2015-16.html" target="_blank">The Civil Rights Data Collection (CRDC): A biennial survey required by the Department's Office for Civil Rights since 1968.</a>
+                        </h3>
+                        <p>
+                            The CRDC shines a spotlight on data that enable us to understand the successes and challenges of schools and school districts in providing educational opportunity to all of our nation's children.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner align-center">
+            <h2 class="line" id="datanotes">Data Notes</h2>
+            <div class="6u$ 12u$(medium) dataExclusion">
+                <h3 class="line">Data Exclusion Rules</h3>
+                <p>
+                    Data included in this story may differ slightly from other published reports due to certain data decisions. For the purposes of these analyses, schools with incomplete or inconsistent data values were excluded. Three percent of schools were excluded for the following reasons:
+                </p>
+                <ol>
+                    <li>The chronic absenteeism question was not applicable to the school (the school must have students enrolled in grades K&ndash;12).</li>
+                    <li>The school reported incomplete data for enrollment and/or the chronic absenteeism count for at least one race/ethnicity subgroup.</li>
+                    <li>The chronic absenteeism count was larger than the K-12 enrollment overall or for at least one race/ethnicity subgroup. Schools with partial or missing data for students with disabilities or English learners were included in all analyses except those that focused on these subgroups.</li>
+                </ol>
+            </div>
+            <div class="6u$ 12u$(medium) dataExclusion">
+                <h3 style="font-size: 15px;" class="line">Grade Level Definitions</h3>
+                <p>
+                    School grade levels were defined using the National Center for Education Statistics (NCES) definition: elementary schools are those in which the lowest grade offered is PK through grade 3 and the highest is PK through grade 8, middle schools are those in which the lowest grade offered is grade 4 through grade 7 and the highest is grade 4 through grade 9, high schools are those in which the lowest grade offered is grade 7 through grade 12 and the highest is grade 12, other schools are those with any other configuration that does not fall within the previous three categories.
+                </p>
+            </div>
+            <div class="6u$ 12u$(medium) dataExclusion">
+                <h3 style="font-size: 15px;" class="line" id="mapnotes">Map Notes</h3>
+                <p>Data might be missing from the chronic absenteeism map if:</p>
+                <ol>
+                    <li>A district did not report chronic absenteeism data or the data were inconsistent.</li>
+                    <li>A district that reported chronic absenteeism data did not match with the NCES district boundary file.</li>
+                    <li>Twenty-five percent of district enrollment was in schools with incomplete or inconsistent data (see Data Exclusion Rules).</li>
+                </ol>
+                <p>
+                    District data displayed on the map may not be based on all schools in the district. All districts with data have complete and consistent data for at least 75 percent of their enrollment.
+                </p>
+                <p>
+                    The available district boundary information for some districts in Vermont reflects the boundaries of a supervisory union rather than a regular school district. As a result, the CRDC data for schools in 254 regular Vermont school districts were aggregated and mapped as part of one of 45 supervisory unions.
+                </p>
+            </div>
+            <div class="6u$ 12u$(medium) dataExclusion">
+                <h3 style="font-size: 15px;" class="line">Document History</h3>
+                <p>
+                    This data story was originally issued with data from the 2013&ndash;14 CRDC on June 7, 2016 and edited with revised 2013&ndash;14 CRDC data on October 27, 2016. The data story was updated with data from the 2015&ndash;16 CRDC in January 2019.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- D3 charts -->
+    <script src="assets/js/d3.v3.min.js"></script>
+    <script src="assets/js/d3-tip.js"></script>
+    <script src="assets/js/chart-functions.js"></script>
+    <script src="assets/js/graph-scroll.js"></script>
+
+    <script>
+
+        // chapter 1 charts
+
+        d3.tsv("assets/data/data.tsv", function (error, data) {
+            if (error) { console.log(error); }
+            else {
+                data.forEach(function (d) {
+                    d.var1 = d.group; // This is the subgroup
+                    d.var2 = +d.number; // This is the raw number
+                    d.var3 = +d.pct; // This is the percentage
+                    d.subchart = +d.subchart;
+                    d.var4 = d.level;
+                });
+
+                data1_2 = data.filter(function (d) { return d.chart == "1-2"; })
+                data1_3 = data.filter(function (d) { if ((d.chart == "1-3") || (d.chart == "1-4") || (d.chart == "1-5")) { return d; } });
+
+                // var chart1_1 = donutChart().data(data1_1).title("students were chronically absent in 2013-14"); // Chapter 1-1
+                var chart1_2 = barChart().marginLeft(150).data(data1_2).containerID("one_chart").subcontainerID("one_sections").sectionID("ch1_2").chartID("chart1_2")
+                    .xAxisLabel("% CHRONICALLY ABSENT IN 2015-16")
+                    .title("While prevalent across the country, students of different races and ethnicities experience chronic absenteeism at different rates.")
+                    .altText("This chart illustrates the percentage of students, by race or ethnicity, who were chronically absent in 2013-14.");
+                //.notes("<strong>Note: </strong>This is a test.")
+                //.source("<strong>Source: </strong>This is a test.");
+
+                var chart1_3 = groupedCol().data(data1_3).containerID("one_chart").subcontainerID("one_sections").sectionID("ch1_3").chartID("chart1_3")
+                    .yAxisLabel("% CHRONICALLY ABSENT IN 2015-16")
+                    .title1("Chronic absenteeism is 15% less likely among English learners than non-English learners.")
+                    .title2("Students with disabilities are about 50% more likely to be chronically absent than students without disabilities.")
+                    .title3("Overall, chronic absenteeism does not differ significantly by gender.")
+                    .altText1("This chart displays chronic absenteeism rates by English learner status.")
+                    .altText2("This chart displays chronic absenteeism rates by disablity status.")
+                    .altText3("This chart displays chronic absenteeism rates by gender.");
+                // .notes1("<strong>Note:</strong> Note 1.")
+                // .notes2("<strong>Note:</strong> Note 2.")
+                // .notes3("<strong>Note:</strong> Note 3.")
+                // .source1("<strong>Source:</strong> Source 1.")
+                // .source2("<strong>Source:</strong> Source 2.")
+                // .source3("<strong>Source:</strong> Source 3."); // Chapter 1 - 3
+
+                d3.select("#ch1_2").call(chart1_2);
+                d3.select("#ch1_3").call(chart1_3);
+
+            };
+        });
+
+        // chapter 2-1
+
+        d3.tsv("assets/data/data.tsv", function (error, data) {
+            if (error) { console.log(error); }
+            else {
+                data.forEach(function (d) {
+                    d.var1 = d.level;
+                    d.var2 = +d.number;
+                    d.var3 = +d.pct;
+                });
+
+                data = data.filter(function (d) { return d.chart == "2-1"; });
+
+                var chart2_1 = dotPlot().data(data).containerID("two_chart").subcontainerID("two_sections").sectionID("ch2_1").chartID("chart2_1")
+                    .xAxisLabel("% CHRONICALLY ABSENT IN 2015-16")
+                    .title("In high school, about 1 in 5 students is chronically absent.")
+                    .altText("This chart displays chronic absenteeism rates by school level.");
+                // .notes("<strong>Note:</strong> Test note.")
+                // .source("<strong>Source:</strong> Test source.");
+
+                d3.select("#ch2_1").call(chart2_1);
+
+            };
+        });
+
+        // chapter 2-2
+
+        d3.tsv("assets/data/data.tsv", function (error, data) {
+            if (error) { console.log(error); }
+            else {
+                data.forEach(function (d) {
+                    d.number = +d.number;
+                    d.pct = +d.pct;
+                });
+
+                data0 = data.filter(function (d) { return d.chart == "2-2"; });
+
+                var chart2_2 = groupedBar().data(data0).marginLeft(150).animateTime(750).containerID("two_chart").subcontainerID("two_sections").sectionID("ch2_2").chartID("chart2_2")
+                    .xAxisLabel("% CHRONICALLY ABSENT IN 2015-16")
+                    .title1("Chronic absenteeism spikes in high school for students of every race and ethnicity.")
+                    .title2("Females are slightly more likely to be chronically absent in high school than males.")
+                    .title3("Students with disabilities face a greater risk of chronic absenteeism at every grade level.")
+                    .title4("English learners are less likely to be chronically absent at every grade level except for high school.")
+                    .altText1("This chart displays chronic absenteeism rates by race/ethnicity and school level.")
+                    .altText2("This chart displays chronic absenteeism rates by gender and school level.")
+                    .altText3("This chart displays chronic absenteeism rates by disability status and school level.")
+                    .altText4("This chart displays chronic absenteeism rates by English learner status and school level.");
+                // .notes1("<strong>Note:</strong> Test note 1.")
+                // .notes2("<strong>Note:</strong> Test note 2.")
+                // .notes3("<strong>Note:</strong> Test note 3.")
+                // .notes4("<strong>Note:</strong> Test note 4.")
+                // .source1("<strong>Source:</strong> Test source 1.")
+                // .source2("<strong>Source:</strong> Test source 2.")
+                // .source3("<strong>Source:</strong> Test source 3.")
+                // .source4("<strong>Source:</strong> Test source 4.");
+
+                d3.select("#ch2_2").call(chart2_2);
+
+            };
+        });
+
+    </script>
+    <!-- Map scripts -->
+
+    <script>
+        $(".legend").css("display", "block");
+
+        var width = 960;
+        var height = 500;
+        var defaultFill = "#E6E6E6";
+
+        // Define the map projection
+        var projection = d3.geo.albersUsa()
+            .translate([width / 2, height / 2])
+            .scale(1000);  // Adjusted scale
+
+        // Define the path generator
+        var path = d3.geo.path()
+            .projection(projection);
+
+        // Create the SVG container
+        var svg = d3.select("#map").append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "0 0 " + width + " " + height)
+            .classed("svg-content-responsive", true)
+            .append("g");
+
+        var g = svg.append("g");
+
+        // Load and render the states
+        d3.json("assets/data/updated_states.json", function (error, us) {
+            if (error) {
+                console.error("Error loading the states.json file:", error);
+                return;
+            }
+
+            var features = topojson.feature(us, us.objects.states).features;
+
+            // Draw each state
+            svg.append("g")
+                .selectAll("path")
+                .data(features)
+                .enter().append("path")
+                .attr("d", path)
+                .attr("fill", function (d) { return colorByGroup(d); })  // Apply color based on category
+                .attr("stroke", "#fff")
+                .attr("stroke-opacity", .15)
+                .on("mouseover", function (d, i) {
+                    var event = d3.event;  // Capture the current event
+
+                    d3.select(this)
+                        .attr("stroke", "#1A1C20")  // Highlight stroke color on hover
+                        .attr("stroke-width", 2)    // Increase stroke width on hover
+                        .attr("stroke-opacity", 1); // Make the stroke fully opaque
+
+                    // Get dynamic data
+                    var stateName = d.properties.state || 'NO DATA';
+                    var percent = (d.properties.NUMERIC_VALUE !== null) ? d.properties.NUMERIC_VALUE + '%' : 'NO DATA';
+
+                    // Create a simple tooltip directly in the D3 event handler
+                    d3.select("body").append("div")
+                        .attr("class", "districtTooltip")
+                        .style("position", "absolute")
+                        .style("background-color", "rgba(0, 0, 0, 0.7)") // Semi-transparent black background
+                        .style("padding", "10px")
+                        .style("border-radius", "8px")
+                        .style("pointer-events", "none")
+                        .style("font-size", "16px") // Increase font size
+                        .style("color", "#fff")
+                        .style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY - 28) + "px")
+                        .style("opacity", 1)
+                        .html('<h3 style="font-size: 18px;">' + stateName.toUpperCase() + '</h3><hr><div style="font-size: 12px;"><b>Percent:</b> ' + percent + '</div>');
+                })
+                .on("mousemove", function (d, i) {
+                    var event = d3.event;  // Capture the current event
+
+                    // Move the tooltip with the mouse
+                    d3.select(".districtTooltip")
+                        .style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY - 28) + "px");
+                })
+                .on("mouseout", function (d, i) {
+                    d3.select(this)
+                        .attr("stroke", "#fff")     // Revert to original stroke color
+                        .attr("stroke-width", 1)    // Revert stroke width
+                        .attr("stroke-opacity", .15); // Revert stroke opacity
+
+                    // Remove the tooltip
+                    d3.select(".districtTooltip").remove();
+                });
+
+            // Keep existing legend functionality
+            // Count the number of states in each category
+            var categoryCounts = {
+                '#bbc7df': 0,
+                '#9c9ac9': 0,
+                '#7f7dbc': 0,
+                '#6954a1': 0,
+                '#491c85': 0
+            };
+
+            features.forEach(function (d) {
+                var color = colorByGroup(d);
+                if (categoryCounts[color] !== undefined) {
+                    categoryCounts[color]++;
+                }
+            });
+
+            // Calculate total states to get proportions
+            var totalStates = features.length;
+
+            // Adjust legend widths
+            var legendButtons = $('.legendButton');
+            legendButtons.each(function () {
+                var buttonValue = $(this).attr("data-value");
+                var proportion = categoryCounts[buttonValue] / totalStates;
+                var width = proportion * 100;
+                $(this).css("width", width + '%');
+            });
+        });
+
+        function colorByGroup(d) {
+            if (!d || !d.properties) {
+                console.error("Missing properties in data object:", d);
+                return defaultFill; // Use default fill color if properties are missing
+            }
+
+            switch (d.properties.category) {
+                case 1: return '#bbc7df';
+                case 2: return '#9c9ac9';
+                case 3: return '#7f7dbc';
+                case 4: return '#6954a1';
+                case 5: return '#491c85';
+                default: return defaultFill;  // Default color if no category matches
+            }
+        }
+    </script>
+
+    <!--DAP ANALYTICS CODE-->
+    <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=ED"></script>
+    <!-- END DAP ANALYTICS CODE -->
+    <!-- START crazyegg -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/new.cetrk.com/pages/scripts/0009/9201.js"></script>
+    <!-- END crazyegg -->
+    <!--GOOGLE ANALYTICS CODE-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10911895-1']);
+        _gaq.push(['_setDomainName', 'ed.gov']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- END GOOGLE ANALYTICS CODE-->
+
+
+</body>
+</html>
