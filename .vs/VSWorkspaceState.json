@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\data",
+    "\\assets\\fonts"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\assets\\data\\updated_states.json",
   "PreviewInSolutionExplorer": false
 }

@@ -14,6 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -4186,6 +4187,37 @@ body.loaded #sidebar nav ul li {
     }
 }
 
+/* Image2 */
+
+.image2 {
+    background-attachment: fixed;
+    background: url("images/intro.svg"), linear-gradient(to bottom right, rgba(30, 46, 73, 0.70), rgba(30, 46, 73, 0.70)), url("images/pencils.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: top right;
+    /*padding: 5em 5em 3em 5em;*/
+    max-width: 100%;
+    /*width: 75em;*/
+}
+
+    .image2 p {
+        font-size: 1.25em;
+        line-height: 1.75em;
+    }
+
+@media screen and (max-width: 980px) {
+
+    .image2 p br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+
+    .image2 p {
+        font-size: 1em;
+    }
+}
+
 /* Chair + Counter */
 
 .chair {
@@ -5353,6 +5385,7 @@ div.disclaimer .legendExplain {
     color: rgba(255, 255, 255, 0.80);
     line-height: 1.75;
 }
+
 
 div.disclaimer .legendPointer {
     /*float: left;*/
